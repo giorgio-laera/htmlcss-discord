@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 body{
-    background-color: #222222;
+    /* background-color: #222222; */
 }
 
 /* utility */
@@ -21,35 +22,60 @@ body{
 }
 .bk-white{
     background-color: white;
-    min-height: 400px;
-    padding:30px 0;
+    /* min-height: 400px;
+    padding:30px 0; */
 }
 .bk-gray{
     background-color: lightgray;
 }
 .bk-white,
 .bk-gray{
-   min-height: 400px;
-    padding:30px 0;
+   /* min-height: 400px;
+    padding:30px 0; */
 }
+a{
+    text-decoration : none;
+}
+.frame-link{
+    text-decoration : none;
+}
+.text-black{
+    color: black;
+}
+.bg-black{
+    background-color: #222222;
+}
+.link-border{
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
 /* header */
 header{
-    background-color: #ADD8E7;
-    padding: 10px 0 5px; 
+    background-color: #3160E0;
+    padding-top: 10px; 
 }
 .nav-flex{
-background-color: rgb(240, 188, 0);
 }
 .nav-logo{
 width: 25%;
+align-items: center;
+
+}
+.nav-logo > img{
+width: 70px;
 }
 .nav-link{
 width: 50%;
-text-align: center;
+justify-content: space-between;
+}
+.nav-link > a{
+    font-size: 13px;
 }
 .nav-login{
 width: 25%;
-text-align: end;
+justify-content: flex-end;
+font-size: 13px;
 }
 .nav-logo, 
 .nav-link, 
@@ -58,26 +84,36 @@ text-align: end;
 }
 #bk-blu{
     margin-top: 15px;
-    background-color: darkblue;
-    min-height: 350px;
+background-image: url(./img/jumbo.png);  
+background-size: cover;
     padding: 25px 0;
 
 }
-.pink-box{
+.jumbotron{
+    flex-direction: column;
     margin: 0 auto;
-   background-color: #EF82ED;
-   width: 70%;
-   min-height: 300px;
+   max-width: 70%;
+    width: 60%;
+    align-items: center;
+    padding-bottom: 35px;
+}
+h1{
+    font-size: 35px;
+}
+.p-header{
+    margin: 35px 0;
 }
 
+
 /* main */
+main > section{
+    padding: 1em 0;
+}
 .big-flex-item{
-background-color: #1E90FF;
-height: 350px;
+min-height: 350px;
 width: 60%;
 }
 .small-flex-item{
-background-color: #FFC0CA;
 width: 40%;
 }
 .green-flex-item{
@@ -89,7 +125,7 @@ width: 40%;
 
 /* footer */
 footer{
-    margin-top: 8px;
+    padding-top: 1em;
 }
 .pink-flex-item{
     background-color:#F08180;
