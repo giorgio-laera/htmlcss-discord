@@ -59,6 +59,9 @@ a{
     height: 40px;
     opacity: 0.2;
 }
+.transf{
+     transform: scaleY(-1);
+}
 
 /* header */
 header{
